@@ -1,8 +1,8 @@
 const menuList = document.getElementById("menu-list");
 export const renderCards = (data) => {
-    const cardsHTML = data
-        .map(
-            (item) => `
+  const cardsHTML = data
+    .map(
+      (item) => `
       <a
         href="#"
         id="card"
@@ -16,9 +16,7 @@ export const renderCards = (data) => {
         <div>
           <div class="d-flex justify-content-between">
             <h5>${item.title}</h5>
-            <p class="text-success fw-bold">${(item.price * 30).toFixed(
-                2
-            )}₺</p>
+            <p class="text-success fw-bold">${(item.price * 30).toFixed(2)}₺</p>
           </div>
 
           <p class="lead">
@@ -27,7 +25,8 @@ export const renderCards = (data) => {
         </div>
       </a>  
   
-        `)
-        .join("");
-    menuList.innerHTML = cardsHTML;
+        `
+    )
+    .join("");
+  menuList.innerHTML = cardsHTML;
 };
