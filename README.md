@@ -11,4 +11,4 @@ This project is a menu page built using JavaScript, HTML, and CSS. It features a
 # Preview🧁🥘
 
 ![](./QRMENU.gif)
-# QR-Menu
+
