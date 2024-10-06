@@ -4,7 +4,7 @@ export const renderCards = (data) => {
     .map(
       (item) => `
       <a
-        href="#"
+        href="/detail.html?id=${item.id}"
         id="card"
         class="d-flex flex-column flex-md-row text-dark gap-3 text-decoration-none"
       >
